@@ -9,5 +9,7 @@ namespace ArithmeticLibrary
         float Subtract (float num1, float num2);
         float Divide (float num1, float num2);
         float Multiply (float num1, float num2);
+        bool IsValidOperator (string input);
+        bool IsValidNumber (string input);
     }
 }
