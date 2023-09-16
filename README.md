@@ -3,6 +3,7 @@ https://dotnet.microsoft.com/en-us/download
 
 To run the project use:
 >cd user/.../ArithmeticLibrary
+
 >dotnet run
 
 To run tests in VSCODE:
@@ -26,11 +27,10 @@ Open your terminal or command prompt.
 
 Navigate to the project directory by using the cd command. Replace user/.../ArithmeticLibrary with the actual path to your ArithmeticLibrary project folder:
 
-Copy code
 >cd user/.../ArithmeticLibrary
+
 Run the project using the following command:
 
-Copy code
 >dotnet run
 
 Running Tests in Visual Studio Code (VSCode)
