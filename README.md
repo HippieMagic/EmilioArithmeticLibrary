@@ -8,8 +8,6 @@ To run the ArithmeticLibrary project, follow these steps:
 
 Open your terminal or command prompt.
 
-Navigate to the project directory by using the cd command. Replace user/.../ArithmeticLibrary with the actual path to your ArithmeticLibrary project folder:
-
 >cd user/.../ArithmeticLibrary
 
 Run the project using the following command:
