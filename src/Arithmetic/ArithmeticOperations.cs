@@ -68,7 +68,6 @@ namespace ArithmeticLibrary
                 if (!isValid)
                 {
                     Console.WriteLine(prompts.NotAValidNumber);
-                    //Console.WriteLine("\nEnter an operator (+,-,/,*) to continue or (q) to quit.");
                     continue;
                 }
 
@@ -76,7 +75,6 @@ namespace ArithmeticLibrary
                 if (number == 0)
                 {
                     Console.WriteLine("\nDivision by zero is not allowed.");
-                    //Console.WriteLine("\nEnter an operator (+,-,/,*) to continue or (q) to quit.");
                     continue;
                 }
 
