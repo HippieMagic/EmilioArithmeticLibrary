@@ -6,6 +6,14 @@
 *.user
 *.sln.docstates
 
+
+# Exclude Visual Studio Code settings
+.vscode/
+
+# Exclude build output folders
+bin/
+obj/
+
 # Build results
 
 [Dd]ebug/
