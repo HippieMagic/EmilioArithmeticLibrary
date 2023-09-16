@@ -1,3 +1,6 @@
+/// <summary>
+/// NUnit tetsing for the arithmetic operations
+/// </summary>
 using NUnit.Framework;
 
 namespace ArithmeticLibrary.Tests

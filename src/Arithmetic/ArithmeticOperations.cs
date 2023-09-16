@@ -35,13 +35,15 @@ namespace ArithmeticLibrary
         {
             return num1 * num2;
         }
-
+        
+        // only return true if it is a valid operator
         public bool IsValidOperator (string input)
         {
             input = input.Trim().ToLower(); // Convert to lowercase and trim whitespace
             return input == "+" || input == "-" || input == "*" || input == "/" || input == "q";
         }
 
+        // only return true if it is a valid number
         public bool IsValidNumber (string input)
         {
             if(float.TryParse(input, out _))
@@ -61,13 +63,13 @@ namespace ArithmeticLibrary
 
             while (true)
             {
-                Console.WriteLine(prompt);
+                Console.WriteLine(prompt); // Display the specified prompt to the user
                 var input = Console.ReadLine();
                 var isValid = operations.IsValidNumber(input);
 
                 if (!isValid)
                 {
-                    Console.WriteLine(prompts.NotAValidNumber);
+                    Console.WriteLine(prompts.NotAValidNumber); // Notify the user of an invalid input
                     continue;
                 }
 
@@ -82,6 +84,8 @@ namespace ArithmeticLibrary
             }
         }
 
+        // Perform arithmetic operations based on the user's choice: 
+        // addition (+), subtraction (-), division (/), or multiplication (*)
         public float PerformOperation(ArithmeticOperations operations, string operationChoice, float num1, float num2)
         {
             switch (operationChoice)

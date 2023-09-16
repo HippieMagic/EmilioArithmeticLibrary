@@ -1,5 +1,5 @@
 /// <summary>
-/// Arithmetic operations interface promoting consisitency and flexibility
+/// Interface for arithmetic operations to ensure consistency, flexibility, and ease of testing.
 /// </summary>
 namespace ArithmeticLibrary
 {

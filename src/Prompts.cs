@@ -16,5 +16,6 @@ namespace ArithmeticLibrary
         public string SecondNumber = "Enter your second number: ";
         public string ErrorInvalidOperator = "Please enter a valid operator!";
         public string NotAValidNumber = "\nNot a valid number!";
+        public string EnterAnOperator = "\nEnter an operator (+,-,/,*) to continue or (q) to quit.";
     }
 }
