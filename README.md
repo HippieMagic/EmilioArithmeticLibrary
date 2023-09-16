@@ -1,19 +1,3 @@
-Make sure you have .NET 7 installed
-https://dotnet.microsoft.com/en-us/download
-
-To run the project use:
->cd user/.../ArithmeticLibrary
-
->dotnet run
-
-To run tests in VSCODE:
-
-ArithmeticLibraryTest
-
-Above any of the methods you should be able to click run.
-
-
-
 ArithmeticLibrary
 ArithmeticLibrary is a simple .NET 7 console application that performs basic arithmetic operations and includes unit tests. Follow the steps below to get started with the project.
 
