@@ -12,6 +12,10 @@ Open your terminal or command prompt.
 
 Run the project using the following command:
 
+>dotnet clean
+
+>dotnet build
+
 >dotnet run
 
 ![Alt text](image.png)
