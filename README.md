@@ -20,8 +20,8 @@ Run the project using the following command:
 
 ![Alt text](image.png)
 
-Running Tests in Visual Studio Code (VSCode)
-ArithmeticLibrary includes unit tests that you can run using Visual Studio Code (VSCode). Follow these steps:
+ArithmeticLibrary includes unit tests that you can run using Visual Studio Code (VSCode). 
+Follow these steps:
 
 Open the ArithmeticLibrary project in Visual Studio Code.
 
