@@ -1,5 +1,5 @@
 ﻿/// <summary>
-/// Main program
+/// Main program, performs basic math
 /// </summary>
 namespace ArithmeticLibrary
 {

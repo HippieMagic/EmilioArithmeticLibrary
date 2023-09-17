@@ -1,5 +1,5 @@
 /// <summary>
-/// Performs basic arithmetic operations
+/// Performs basic arithmetic operations, all reausable methods
 /// </summary>
 namespace ArithmeticLibrary
 {
