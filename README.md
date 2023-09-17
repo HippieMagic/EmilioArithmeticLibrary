@@ -1,4 +1,4 @@
-ArithmeticLibrary is a simple .NET 7 console application that performs basic arithmetic operations and includes unit tests. Follow the steps below to get started with the project.
+ArithmeticLibrary is a simple .NET 7 console application that performs basic arithmetic operations, demonstrates reuse, and includes unit tests. Follow the steps below to get started with the project.
 
 Prerequisites
 Before running the project or tests, make sure you have .NET 7 installed on your machine. If you don't have it installed, you can download it from https://dotnet.microsoft.com/en-us/download
