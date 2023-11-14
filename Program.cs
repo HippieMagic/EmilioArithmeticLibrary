@@ -5,54 +5,45 @@ namespace ArithmeticLibrary
 {
     class Program
     {
-        public const string Addition = "+";
-        public const string Subtraction = "-";
-        public const string Division = "/";
-        public const string Multiplication = "*";
-
         static void Main(string[] args)
         {
-            ArithmeticOperations operations = new();
-            Prompts prompts = new();
-            bool continueCalculating = true;
+            var operations = new ArithmeticOperations();
+            var random = new Random();
+            var score = 0;
+            const int totalQuestions = 5; // Number of questions in the quiz
 
-            Console.WriteLine(prompts.Description);
+            Console.WriteLine("Welcome to the Arithmetic Quiz Game!");
+            Console.WriteLine("You will be given " + totalQuestions + " questions.");
 
-            // loop until user quits
-            while (continueCalculating)
+            for (var i = 0; i < totalQuestions; i++)
             {
-                // get user input, display error message until valid operator is entered
-                var operationChoice = Console.ReadLine();
-                var isValid = operations.IsValidOperator(operationChoice);
+                // Generate random numbers and select an operation
+                float num1 = random.Next(1, 10);
+                float num2 = random.Next(1, 10);
+                string[] operationChoices = { ArithmeticOperations.Addition, ArithmeticOperations.Subtraction, ArithmeticOperations.Multiplication, ArithmeticOperations.Division };
+                var operation = operationChoices[random.Next(operationChoices.Length)];
 
-                if (!isValid)
+                // Calculate correct answer
+                var correctAnswer = operations.PerformOperation(operations, operation, num1, num2);
+
+                // Ask question
+                Console.WriteLine($"Question {i + 1}: What is {num1} {operation} {num2}?");
+                var userAnswer = Console.ReadLine();
+
+                // Check answer
+                if (float.TryParse(userAnswer, out var userResponse) && userResponse == correctAnswer)
                 {
-                    Console.WriteLine(prompts.ErrorInvalidOperator);
-                    continue;
-                }
-
-                // if the user enters "q" exit the loop 
-                if (operationChoice != "q")
-                {
-                    // make sure the first number is a valid number, else show error and prompt to try again
-                    float num1 = operations.GetValidNumber(prompts.FirstNumber, operations);
-                    if (num1 == -9999) continue;
-
-                    // make sure the second number is a valid number, else show error and prompt to try again
-                    float num2 = operations.GetValidNumber(prompts.SecondNumber, operations);
-                    if (num2 == -9999) continue;
-
-                    // based off of what operator the user entered do the calculation 
-                    float result = operations.PerformOperation(operations, operationChoice, num1, num2);
-
-                    Console.WriteLine($"Result: {result}");
-                    Console.WriteLine(prompts.EnterAnOperator);
+                    Console.WriteLine("Correct!");
+                    score++;
                 }
                 else
                 {
-                    continueCalculating = false;
+                    Console.WriteLine($"Wrong! The correct answer is {correctAnswer}.");
                 }
             }
+
+            // End of game
+            Console.WriteLine($"Quiz over! Your score: {score}/{totalQuestions}");
         }
     }
 }
