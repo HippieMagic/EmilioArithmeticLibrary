@@ -1,5 +1,5 @@
 ﻿/// <summary>
-/// Main program, performs basic math
+/// Main program, basic quiz game prototype
 /// </summary>
 namespace ArithmeticLibrary
 {
